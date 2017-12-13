@@ -1,0 +1,33 @@
+.form-control {
+	margin-bottom: 15px;
+}
+
+body {
+	background-color: #DCECEC;
+}
+
+.btn {
+	margin: 2px;
+}
+
+hr {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #b5abab;
+}
+
+
+
+.table-bordered>tbody>tr>td,
+.table-bordered>tbody>tr>th,
+.table-bordered>tfoot>tr>td,
+.table-bordered>tfoot>tr>th,
+.table-bordered>thead>tr>td,
+.table-bordered>thead>tr>th {
+    border: 1px solid #b5abab;
+}
+
+.table>thead:first-child>tr:first-child>th {
+    border: 1px solid #b5abab;
+}
