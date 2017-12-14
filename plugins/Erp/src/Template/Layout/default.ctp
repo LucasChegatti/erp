@@ -19,11 +19,11 @@
         <nav class="navbar navbar-inverse navbar-static-top">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="<?php echo $this->Url->build('/') ?>">Erp</a>
+                    <a class="navbar-brand" href="<?php echo $this->Url->build('/') ?>"><?php echo  $this->Html->image( 'logo-menu.png',  [ 'alt' => 'CakePHP']);?></a>
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li><a href="<?php echo $this->Url->build('/home/home');?>">Home</a></li>
+                        <li><a href="<?php echo $this->Url->build('/');?>">Home</a></li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cadastros <span class="caret"></span></a>
 							<ul class="dropdown-menu">
@@ -67,8 +67,13 @@
 						</li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="<?php echo $this->Url->build('/users/login');?>">Entrar</a></li>
-                        <li><a href="<?php echo $this->Url->build('/users/logout');?>">Sair</a></li>
+                        <li>
+                            <?php
+								echo $this->Html->link('<span class="glyphicon glyphicon-off"></span>',
+									['action' => 'logout'],
+									['escape' => false]);
+                            ?>
+                        </li>
                     </ul>
                 </div>
             </div>
