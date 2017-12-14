@@ -9,6 +9,7 @@
     echo $this->Html->css(['estilo.css']);
     echo $this->fetch('css');
     ?>
+    <script src='http://code.jquery.com/jquery-2.1.3.min.js'></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 </head>
@@ -22,47 +23,46 @@
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li>
-                            <?php
-                                echo $this->Html->link('Usuários',
-                                [
-                                    'controller' => 'users',
-                                    'action' => 'index'
-                                ]);
-                            ?>
-                        </li>
-                        <li>
-                            <?php
-                                echo $this->Html->link('Funcionários',
-                                [
-                                    'controller' => 'funcionarios',
-                                    'action' => 'index'
-                                ]);
-                            ?>
-                        </li>
-                        <li>
-                            <?php
-                                echo $this->Html->link('Cargos',
-                                [
-                                    'controller' => 'cargos',
-                                    'action' => 'index'
-                                ]);
-                            ?>
-                        </li>
-                        <li>
-                            <?php
-                                echo $this->Html->link('Horários',
-                                [
-                                    'controller' => 'horarios',
-                                    'action' => 'index'
-                                ]);
-                            ?>
-                        </li>
+                        <li><a href="<?php echo $this->Url->build('/home/home');?>">Home</a></li>
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cadastros <span class="caret"></span></a>
 							<ul class="dropdown-menu">
-					            <li><a href="#">Action</a></li>
-					            <li><a href="#">One more separated link</a></li>
+                                <li>
+                                    <?php
+                                        echo $this->Html->link('Usuários',
+                                        [
+                                            'controller' => 'users',
+                                            'action' => 'index'
+                                        ]);
+                                    ?>
+                                </li>
+                                <li>
+                                    <?php
+                                        echo $this->Html->link('Funcionários',
+                                        [
+                                            'controller' => 'funcionarios',
+                                            'action' => 'index'
+                                        ]);
+                                    ?>
+                                </li>
+                                <li>
+                                    <?php
+                                        echo $this->Html->link('Cargos',
+                                        [
+                                            'controller' => 'cargos',
+                                            'action' => 'index'
+                                        ]);
+                                    ?>
+                                </li>
+                                <li>
+                                    <?php
+                                        echo $this->Html->link('Horários',
+                                        [
+                                            'controller' => 'horarios',
+                                            'action' => 'index'
+                                        ]);
+                                    ?>
+                                </li>
 					        </ul>
 						</li>
                     </ul>
