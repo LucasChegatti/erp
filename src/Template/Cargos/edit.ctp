@@ -1,3 +1,4 @@
+<div class="container">
 <h1>Editar Cargo</h1>
 <hr>
 <?php
@@ -41,3 +42,5 @@ echo $this->Form->button('Salvar', ['class'=>'btn btn-success']);
 echo $this->Html->link('Cancelar', ['action'=>'index'], ['class'=>'btn btn-danger']);
 
 echo $this->Form->end();
+?>
+</div>

@@ -1,3 +1,10 @@
+<?php
+	$config = [
+		'class' => 'form-control',
+		'templates' => 'app_form'
+	];
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -125,8 +132,7 @@
 
 			<section id="contato" class="col-sm-6">
 				<h2>Contato</h2>
-				<h4>Entre em contato conosco</h4>
-
+				<h5>Entre em contato conosco</h5>
 				<form>
 					<div class="form-group">
 						<label for="contato-nome">Nome:</label>
@@ -137,32 +143,14 @@
 						<label for="contato-email">E-mail:</label>
 						<div class="input-group">
 							<div class="input-group-addon">@</div>
-			      	<input id="contato-email" class="form-control" type="email" placeholder="Seu e-mail">
-		      	</div>
-					</div>
-
-					<div class="grupo-radio">
-						<div class="radio">
-							<label>
-								<input type="radio" name="tipo-pessoa" value="fisica" checked>
-								Pessoa física
-							</label>
-						</div>
-
-						<div class="radio">
-							<label>
-								<input type="radio" name="tipo-pessoa" value="juridica">
-								Pessoa jurídica
-							</label>
-						</div>
+			      			<input id="contato-email" class="form-control" type="email" placeholder="Seu e-mail">
+		      			</div>
 					</div><!--
 
-					--><select class="contato-select form-control" name="tipo-solicitacao">
-						<option value="" disabled selected>Tipo de solicitação</option>
-					  <option value="casa">Casa</option>
-					  <option value="apartamento">Apartamento</option>
-					  <option value="mansao">Mansão</option>
-					</select>
+					--><div class="form-group">
+  						<label for="comment">Mensagem:</label>
+  						<textarea class="form-control" rows="3" id="comment"></textarea>
+					</div>
 
 					<button type="submit" class="btn btn-primary">Enviar</button>
 
