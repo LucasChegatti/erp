@@ -1,3 +1,5 @@
+<div class="container">
+
 <h2>Novo Funcionário</h2>
 <hr>
 <?php
@@ -193,3 +195,4 @@ echo $this->Form->button('Salvar', ['class' => 'btn btn-success']);
 echo $this->Html->link('Cancelar', ['action' => 'index'], ['class' => 'btn btn-danger']);
 echo $this->Form->end();
 ?>
+</div>

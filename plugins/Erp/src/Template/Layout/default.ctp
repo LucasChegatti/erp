@@ -19,79 +19,76 @@
         <nav class="navbar navbar-inverse navbar-static-top">
             <div class="container-fluid">
                 <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
                     <a class="navbar-brand" href="<?php echo $this->Url->build('/') ?>"><?php echo  $this->Html->image( 'logo-menu.png',  [ 'alt' => 'CakePHP']);?></a>
                 </div>
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="<?php echo $this->Url->build('/');?>">Home</a></li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cadastros <span class="caret"></span></a>
-							<ul class="dropdown-menu">
-                                <li>
-                                    <?php
-                                        echo $this->Html->link('Usuários',
-                                        [
-                                            'controller' => 'users',
-                                            'action' => 'index'
-                                        ]);
-                                    ?>
-                                </li>
-                                <li>
-                                    <?php
-                                        echo $this->Html->link('Funcionários',
-                                        [
-                                            'controller' => 'funcionarios',
-                                            'action' => 'index'
-                                        ]);
-                                    ?>
-                                </li>
-                                <li>
-                                    <?php
-                                        echo $this->Html->link('Cargos',
-                                        [
-                                            'controller' => 'cargos',
-                                            'action' => 'index'
-                                        ]);
-                                    ?>
-                                </li>
-                                <li>
-                                    <?php
-                                        echo $this->Html->link('Horários',
-                                        [
-                                            'controller' => 'horarios',
-                                            'action' => 'index'
-                                        ]);
-                                    ?>
-                                </li>
-					        </ul>
-						</li>
+                        <li class="active"><a href="<?php echo $this->Url->build('/');?>">Home</a></li>
+                        <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <?php
+                                echo $this->Html->link('Usuários',
+                                    [
+                                        'controller' => 'users',
+                                        'action' => 'index'
+                                    ]);
+                            ?>
+                        </li>
+                        <li>
+                            <?php
+                                echo $this->Html->link('Funcionários',
+                                    [
+                                        'controller' => 'funcionarios',
+                                        'action' => 'index'
+                                    ]);
+                            ?>
+                        </li>
+                        <li>
+                            <?php
+                                echo $this->Html->link('Cargos',
+                                    [
+                                        'controller' => 'cargos',
+                                        'action' => 'index'
+                                    ]);
+                            ?>
+                        </li>
+                        <li>
+                            <?php
+                                echo $this->Html->link('Horários',
+                                    [
+                                        'controller' => 'horarios',
+                                        'action' => 'index'
+                                    ]);
+                            ?>
+                        </li>
+                    </ul>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li>
                             <?php
-								echo $this->Html->link('<span class="glyphicon glyphicon-off"></span>',
-									['action' => 'logout'],
-									['escape' => false]);
+                                echo $this->Html->link('<span class="glyphicon glyphicon-off"></span>',
+                                    ['action' => 'logout'],
+                                    ['escape' => false]);
                             ?>
                         </li>
                     </ul>
-                </div>
-            </div>
+                </div><!--/.nav-collapse -->
+            </div><!--/.container-fluid -->
         </nav>
     </header>
 
 	<main>
-		<div class="container">
 			<?php echo $this->fetch('content') ?>
-		</div>
+		
 	</main>
-
-	<footer>
-		<center>
-			<br>
-			<p><small>by Lucas Chegatti</small></p>
-		</center>
-	</footer>
 
 </body>
 
