@@ -27,9 +27,9 @@
         <div class="container">
 		<h2>Sobre Nós</h2>
 		<div class="row">
-			<img class="img-responsive col-sm-6" src="img/reunioes.jpg">
+			<img class="img-responsive col-lg-6" src="img/reunioes.jpg">
 
-			<div class="panel-group col-sm-6" id="accordion" role="tablist" aria-multiselectable="true">
+			<div class="panel-group col-lg-6" id="accordion" role="tablist" aria-multiselectable="true">
 				<div class="panel panel-primary">
 					<div class="panel-heading" role="tab" id="headingOne">
 						<h4 class="panel-title">
@@ -122,7 +122,7 @@
 
     <div class="container">
 		<div class="row">
-			<section id="video" class="col-sm-6">
+			<section id="video" class="col-lg-6">
 
 				<h2>Video institucional</h2>
 				<div class="embed-responsive embed-responsive-16by9">
@@ -130,7 +130,7 @@
 				</div>
 			</section>
 
-			<section id="contato" class="col-sm-6">
+			<section id="contato" class="col-lg-6">
 				<h2>Contato</h2>
 				<h5>Entre em contato conosco</h5>
 				<form>
