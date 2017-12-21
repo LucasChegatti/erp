@@ -8,9 +8,6 @@ class UsersController extends AppController
 {
 	public function index ()
 	{
-		$this->paginate = [
-			'limit' => 5
-		];
 		$data = $this->paginate($this->Users);
 		$this->set(['results'=> $data]);
 	}

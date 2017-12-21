@@ -1,15 +1,23 @@
-<div class="container">
-	<h1>
-	    Horários
-	    <div class="btn-group pull-right">
-	        <?php echo $this->Html->link('Novo Horário', ['action' => 'add'], ['class' => 'btn btn-primary']) ?>
-	    </div>
-	</h1>
-</div>
-<div class="container">
+<div class="row">
+  <div class="col-lg-12">
+  	<h1>
+  	    Horários
+  	    <div class="btn-group pull-right">
+  	        <?php echo $this->Html->link('Novo Horário', ['action' => 'add'], ['class' => 'btn btn-primary']) ?>
+  	    </div>
+  	</h1>
     <hr>
-    <div class="row">
-        <table class="table table-bordered table-hover table-condensed">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+                Lista dos Horários
+            </div>
+          <div class="panel-body">
+        <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
           <thead>
             <tr>
               <th>Descrição</th>
@@ -48,7 +56,16 @@
             <?php endforeach; ?>
           </tbody>
         </table>
+      </div>
     </div>
+  </div>
 </div>
 
-<?php echo $this->element('pagination');
+<script>
+    $(document).ready(function() {
+        $('#dataTables-example').DataTable({
+            responsive: true
+        });
+    });
+</script>
+

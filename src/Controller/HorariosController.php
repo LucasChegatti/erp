@@ -8,9 +8,6 @@ class HorariosController extends AppController
 {
 	public function index ()
 	{
-		$this->paginate = [
-			'limit' => 5
-		];
 		$data = $this->paginate($this->Horarios);
 		$this->set(['result'=>$data]);
 	}

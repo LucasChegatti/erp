@@ -9,9 +9,6 @@ class FuncionariosController extends AppController
 	public function index ()
 	{
 		$this->paginate = [
-			'limit' => 5
-		];
-		$this->paginate = [
 			'contain' => [
 				'Cargos',
 				'Horarios'

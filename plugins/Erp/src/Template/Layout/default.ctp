@@ -64,12 +64,12 @@
                         <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> Perfil</a>
                         </li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Configurações</a>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Sair</a>
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
@@ -82,16 +82,54 @@
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
                         <li>
-                            <a href="index.html"><i class="fa fa-home fa-fw"></i> Inicio</a>
+                            <a href="index.html"><i class="fa fa-home fa-fw"></i> Início</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-th-list fa-fw"></i> Cadastros<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="flot.html">Flot Charts</a>
+                                    <?php
+                                       echo $this->Html->link('<i class="fa fa-th-list fa-fw"></i> Cargos',
+                                            [
+                                                'controller' => 'cargos',
+                                                'action' => 'index'
+                                            ],
+                                            ['escape' => false]
+                                        );
+                                    ?>
                                 </li>
                                 <li>
-                                    <a href="morris.html">Morris.js Charts</a>
+                                    <?php
+                                        echo $this->Html->link('<i class="fa fa-th-list fa-fw"></i> Funcionários',
+                                            [
+                                                'controller' => 'funcionarios',
+                                                'action' => 'index'
+                                            ],
+                                            ['escape' => false]
+                                        );
+                                    ?>
+                                </li>
+                                <li>
+                                    <?php
+                                        echo $this->Html->link('<i class="fa fa-th-list fa-fw"></i> Horários',
+                                            [
+                                                'controller' => 'horarios',
+                                                'action' => 'index'
+                                            ],
+                                            ['escape' => false]
+                                        );
+                                    ?>
+                                </li>
+                                <li>
+                                    <?php
+                                        echo $this->Html->link('<i class="fa fa-th-list fa-fw"></i> Usuários',
+                                            [
+                                                'controller' => 'users',
+                                                'action' => 'index'
+                                            ],
+                                            ['escape' => false]
+                                        );
+                                    ?>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
