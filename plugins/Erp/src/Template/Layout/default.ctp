@@ -13,6 +13,7 @@
 
     <?php 
         echo $this->Html->css([
+            'estilo.css',
             '/vendor/bootstrap/css/bootstrap.min.css',
             '/vendor/metisMenu/metisMenu.min.css',
             '/dist/css/sb-admin-2.css',
@@ -135,10 +136,10 @@
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
+                            <a href="tables.html"><i class="fa fa-table fa-fw"></i> Link</a>
                         </li>
                         <li>
-                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
+                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Link</a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
